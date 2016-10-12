@@ -1,0 +1,152 @@
+*{
+  box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    width: 100%;
+}
+body{
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+h2{
+  color: white;
+}
+#about h2{
+  color: #0D1116;
+  text-align: center;
+}
+
+.col-lg-12 img.img-responsive{
+  margin: 0 auto;
+  margin-top: 230px;
+}
+header, header .header-content{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-image: url('../img/portfolio-background.jpg');
+  background-size: cover;
+  filter: grayscale(80%);
+  -webkit-filter: grayscale(50%);
+  min-height: 100%;
+}
+/*@media (min-width: 768px){
+  header {
+    min-height: 100%;
+  }
+}*/
+header .intro-text .name{
+  font-size: 40px;
+  /*font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+header .intro-text .skills{
+  font-size: 20px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: inherit;
+  text-align: center;
+  color: white;
+}
+hr {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  border-top: 2px solid white;
+  width: 370px;
+}
+section#portfolio{
+  background-color: #de3814;
+  /*background-color: #121416;*/
+
+  /*height: 300px;*/
+}
+.circle{
+  display: inline-block;
+  margin: 10px;
+}
+.navbar-default{
+  box-shadow: 2px 2px 15px;
+  background-color: rgba(248, 248, 248, 0.84);
+  /*background-color: transparent;*/
+}
+.navbar-default .navbar-nav > li > a {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #777;
+}
+a.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand{
+  color: #ff5600;
+}
+#portfolio h2{
+  margin-top: 40px;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+#about h2,#contact h2{
+  margin-top: 90px;
+  color: #333;
+  font-size: 40px;
+}
+.circular-progress .circle .circles-wrp .circles-text{
+  font-size: 30px;
+}
+#about p {
+    margin-left: 20px;
+    margin-top: 25px;
+    margin-right: 20px;
+    font-size: 22px;
+    text-align: justify;
+    color: #656464;
+}
+#about .circle p{
+  text-align: center;
+  margin-bottom: 0;
+  color: #333;
+}
+.glyphicon{
+  font-size: 30px;
+}
+
+#contact .row{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#contact hr{
+  margin-top: 0;
+  margin-bottom: 20px;
+  width: 70px;
+  border-color: #de3814;
+}
+#about .row{
+  padding-bottom: 40px;
+}
+.glyphicon-refresh-animate {
+    color: white;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#portfolio .glyphicon {
+    font-size: 50px;
+}
+
+#portfolio p {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: white;
+}
