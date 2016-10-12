@@ -1,13 +1,13 @@
 //var colors = [
 //  ['#D3B6C6', '#4B253A'], ['#FCE6A4', '#EFB917'], ['#BEE3F7', '#45AEEA'], ['#F8F9B6', '#D2D558'], ['#F4BCBF', '#D43A43']
 //], circles = [], percentage_values = [30,70,70];
-$(document).ready(function(){
+jQuery(document).ready(function(){
   var circles = [], percentage_values = [80,70,30,60], hasCreatedObjects = false;
 
   for (var i = 1; i <= 4; i++) {
     var child = document.getElementById('circles-' + i);
 
-    $('#circles-' + i).circliful({
+    jQuery('#circles-' + i).circliful({
       animation: 1,
       animationStep: 5,
       foregroundBorderWidth:10,
@@ -25,16 +25,16 @@ $(document).ready(function(){
 //---------------------------------------
 var scroll_start = 0;
 var offset = 70;
-  $(document).scroll(function() {
-    scroll_start = $(this).scrollTop();
+  jQuery(document).scroll(function() {
+    scroll_start = jQuery(this).scrollTop();
     if(scroll_start > offset.top) {
-      $(".navbar-default").css('background-color', '#fff');
-      $('.navbar-default .navbar-nav > li > a ').css('color','#777');
+      jQuery(".navbar-default").css('background-color', '#fff');
+      jQuery('.navbar-default .navbar-nav > li > a ').css('color','#777');
     } else if (scroll_start == 0) {
-      $('.navbar-default').css('background-color', 'rgba(248, 248, 248, 0.84)');
+      jQuery('.navbar-default').css('background-color', 'rgba(248, 248, 248, 0.84)');
     } else{
-      $(".navbar-default").css('background-color', '#fff');
-      $('.navbar-default .navbar-nav > li > a ').css('color','#777');
+      jQuery(".navbar-default").css('background-color', '#fff');
+      jQuery('.navbar-default .navbar-nav > li > a ').css('color','#777');
     }
   });
 
